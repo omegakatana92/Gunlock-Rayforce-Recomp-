@@ -1,0 +1,15 @@
+# never commit game data or anything derived from it
+*.zip
+*.bin
+!tools/cycles68k.bin
+!tools/cycles020.bin
+*.nv
+rom/
+gen/
+gen_trace/
+# build output
+build/
+dist/
+tools/libdis.so
+win/*.res.o
+__pycache__/

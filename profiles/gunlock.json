@@ -1,0 +1,597 @@
+{
+  "game_id": "gunlock",
+  "title": "Gunlock",
+  "platform": "Arcade",
+  "theme": "azure",
+  "display": {
+    "aspect_ratio": "4:3",
+    "integer_scaling": true,
+    "filter": "nearest",
+    "orientation": "auto"
+  },
+  "features": {
+    "save_states": true,
+    "rewind": true,
+    "gadgets": true,
+    "crt_shader": true,
+    "attract_preview": true,
+    "fast_forward": true
+  },
+  "content": {
+    "search_paths": [
+      "~/Downloads",
+      "~/Downloads/gunlock",
+      "~/Emulation/roms/arcade",
+      "~/Emulation/roms/mame",
+      "~/roms"
+    ]
+  },
+  "gameplay_note": "Difficulty, lives, extends and other dip-switch style options are stored by the game in its EEPROM. Use Extras > Service Menu to change them; they are saved with your high scores.",
+  "control_preset_names": {
+    "default": "Standard (face buttons)",
+    "triggers": "Shot on triggers",
+    "stick": "Arcade stick / fight pad"
+  },
+  "control_presets": {
+    "default": {
+      "p1.up": [
+        {
+          "key": "Up"
+        },
+        {
+          "button": "dpup"
+        },
+        {
+          "axis": "-lefty"
+        }
+      ],
+      "p1.down": [
+        {
+          "key": "Down"
+        },
+        {
+          "button": "dpdown"
+        },
+        {
+          "axis": "+lefty"
+        }
+      ],
+      "p1.left": [
+        {
+          "key": "Left"
+        },
+        {
+          "button": "dpleft"
+        },
+        {
+          "axis": "-leftx"
+        }
+      ],
+      "p1.right": [
+        {
+          "key": "Right"
+        },
+        {
+          "button": "dpright"
+        },
+        {
+          "axis": "+leftx"
+        }
+      ],
+      "p1.a": [
+        {
+          "key": "Z"
+        },
+        {
+          "button": "a"
+        }
+      ],
+      "p1.b": [
+        {
+          "key": "X"
+        },
+        {
+          "button": "b"
+        }
+      ],
+      "p1.start": [
+        {
+          "key": "1"
+        },
+        {
+          "button": "start"
+        }
+      ],
+      "p1.coin": [
+        {
+          "key": "5"
+        },
+        {
+          "button": "back"
+        }
+      ],
+      "p2.up": [
+        {
+          "key": "W"
+        },
+        {
+          "button": "dpup"
+        },
+        {
+          "axis": "-lefty"
+        }
+      ],
+      "p2.down": [
+        {
+          "key": "S"
+        },
+        {
+          "button": "dpdown"
+        },
+        {
+          "axis": "+lefty"
+        }
+      ],
+      "p2.left": [
+        {
+          "key": "A"
+        },
+        {
+          "button": "dpleft"
+        },
+        {
+          "axis": "-leftx"
+        }
+      ],
+      "p2.right": [
+        {
+          "key": "D"
+        },
+        {
+          "button": "dpright"
+        },
+        {
+          "axis": "+leftx"
+        }
+      ],
+      "p2.a": [
+        {
+          "key": "J"
+        },
+        {
+          "button": "a"
+        }
+      ],
+      "p2.b": [
+        {
+          "key": "K"
+        },
+        {
+          "button": "b"
+        }
+      ],
+      "p2.start": [
+        {
+          "key": "2"
+        },
+        {
+          "button": "start"
+        }
+      ],
+      "p2.coin": [
+        {
+          "key": "6"
+        },
+        {
+          "button": "back"
+        }
+      ],
+      "service": [
+        {
+          "key": "9"
+        }
+      ],
+      "test": [
+        {
+          "key": "F2"
+        },
+        {
+          "button": "rightstick"
+        }
+      ]
+    },
+    "triggers": {
+      "p1.up": [
+        {
+          "key": "Up"
+        },
+        {
+          "button": "dpup"
+        },
+        {
+          "axis": "-lefty"
+        }
+      ],
+      "p1.down": [
+        {
+          "key": "Down"
+        },
+        {
+          "button": "dpdown"
+        },
+        {
+          "axis": "+lefty"
+        }
+      ],
+      "p1.left": [
+        {
+          "key": "Left"
+        },
+        {
+          "button": "dpleft"
+        },
+        {
+          "axis": "-leftx"
+        }
+      ],
+      "p1.right": [
+        {
+          "key": "Right"
+        },
+        {
+          "button": "dpright"
+        },
+        {
+          "axis": "+leftx"
+        }
+      ],
+      "p1.a": [
+        {
+          "key": "Z"
+        },
+        {
+          "axis": "+righttrigger"
+        },
+        {
+          "button": "a"
+        }
+      ],
+      "p1.b": [
+        {
+          "key": "X"
+        },
+        {
+          "axis": "+lefttrigger"
+        },
+        {
+          "button": "b"
+        }
+      ],
+      "p1.start": [
+        {
+          "key": "1"
+        },
+        {
+          "button": "start"
+        }
+      ],
+      "p1.coin": [
+        {
+          "key": "5"
+        },
+        {
+          "button": "back"
+        }
+      ],
+      "p2.up": [
+        {
+          "key": "W"
+        },
+        {
+          "button": "dpup"
+        },
+        {
+          "axis": "-lefty"
+        }
+      ],
+      "p2.down": [
+        {
+          "key": "S"
+        },
+        {
+          "button": "dpdown"
+        },
+        {
+          "axis": "+lefty"
+        }
+      ],
+      "p2.left": [
+        {
+          "key": "A"
+        },
+        {
+          "button": "dpleft"
+        },
+        {
+          "axis": "-leftx"
+        }
+      ],
+      "p2.right": [
+        {
+          "key": "D"
+        },
+        {
+          "button": "dpright"
+        },
+        {
+          "axis": "+leftx"
+        }
+      ],
+      "p2.a": [
+        {
+          "key": "J"
+        },
+        {
+          "axis": "+righttrigger"
+        },
+        {
+          "button": "a"
+        }
+      ],
+      "p2.b": [
+        {
+          "key": "K"
+        },
+        {
+          "axis": "+lefttrigger"
+        },
+        {
+          "button": "b"
+        }
+      ],
+      "p2.start": [
+        {
+          "key": "2"
+        },
+        {
+          "button": "start"
+        }
+      ],
+      "p2.coin": [
+        {
+          "key": "6"
+        },
+        {
+          "button": "back"
+        }
+      ],
+      "service": [
+        {
+          "key": "9"
+        }
+      ],
+      "test": [
+        {
+          "key": "F2"
+        },
+        {
+          "button": "rightstick"
+        }
+      ]
+    },
+    "stick": {
+      "p1.up": [
+        {
+          "key": "Up"
+        },
+        {
+          "button": "dpup"
+        },
+        {
+          "axis": "-lefty"
+        }
+      ],
+      "p1.down": [
+        {
+          "key": "Down"
+        },
+        {
+          "button": "dpdown"
+        },
+        {
+          "axis": "+lefty"
+        }
+      ],
+      "p1.left": [
+        {
+          "key": "Left"
+        },
+        {
+          "button": "dpleft"
+        },
+        {
+          "axis": "-leftx"
+        }
+      ],
+      "p1.right": [
+        {
+          "key": "Right"
+        },
+        {
+          "button": "dpright"
+        },
+        {
+          "axis": "+leftx"
+        }
+      ],
+      "p1.a": [
+        {
+          "key": "Left Ctrl"
+        },
+        {
+          "button": "x"
+        }
+      ],
+      "p1.b": [
+        {
+          "key": "Left Alt"
+        },
+        {
+          "button": "y"
+        }
+      ],
+      "p1.start": [
+        {
+          "key": "1"
+        },
+        {
+          "button": "start"
+        }
+      ],
+      "p1.coin": [
+        {
+          "key": "5"
+        },
+        {
+          "button": "back"
+        }
+      ],
+      "p2.up": [
+        {
+          "key": "W"
+        },
+        {
+          "button": "dpup"
+        },
+        {
+          "axis": "-lefty"
+        }
+      ],
+      "p2.down": [
+        {
+          "key": "S"
+        },
+        {
+          "button": "dpdown"
+        },
+        {
+          "axis": "+lefty"
+        }
+      ],
+      "p2.left": [
+        {
+          "key": "A"
+        },
+        {
+          "button": "dpleft"
+        },
+        {
+          "axis": "-leftx"
+        }
+      ],
+      "p2.right": [
+        {
+          "key": "D"
+        },
+        {
+          "button": "dpright"
+        },
+        {
+          "axis": "+leftx"
+        }
+      ],
+      "p2.a": [
+        {
+          "key": "Q"
+        },
+        {
+          "button": "x"
+        }
+      ],
+      "p2.b": [
+        {
+          "key": "E"
+        },
+        {
+          "button": "y"
+        }
+      ],
+      "p2.start": [
+        {
+          "key": "2"
+        },
+        {
+          "button": "start"
+        }
+      ],
+      "p2.coin": [
+        {
+          "key": "6"
+        },
+        {
+          "button": "back"
+        }
+      ],
+      "service": [
+        {
+          "key": "9"
+        }
+      ],
+      "test": [
+        {
+          "key": "F2"
+        },
+        {
+          "button": "rightstick"
+        }
+      ]
+    }
+  },
+  "gadgets": {
+    "enabled": true,
+    "items": {
+      "input": {
+        "on": true,
+        "x": 0.04,
+        "y": 0.62,
+        "scale": 1.0
+      },
+      "fps": {
+        "on": false,
+        "x": 0.04,
+        "y": 0.08,
+        "scale": 1.0
+      },
+      "frametime": {
+        "on": false,
+        "x": 0.04,
+        "y": 0.2,
+        "scale": 1.0
+      },
+      "playtime": {
+        "on": true,
+        "x": 0.04,
+        "y": 0.32,
+        "scale": 1.0
+      },
+      "score": {
+        "on": true,
+        "x": 0.8,
+        "y": 0.08,
+        "scale": 1.0
+      },
+      "hiscore": {
+        "on": true,
+        "x": 0.8,
+        "y": 0.2,
+        "scale": 1.0
+      },
+      "score2": {
+        "on": false,
+        "x": 0.8,
+        "y": 0.32,
+        "scale": 1.0
+      }
+    }
+  }
+}

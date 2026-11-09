@@ -1,0 +1,18 @@
+{
+  "id": "neon_violet",
+  "name": "Neon Violet (example)",
+  "base": "azure",
+  "backdrop": "stripes",
+  "colors": {
+    "background":  "#08040f",
+    "background2": "#1c0b2e",
+    "panel":       "#140a22d8",
+    "panel_edge":  "#3b2258",
+    "accent":      "#c46bff",
+    "accent2":     "#ff4fa0",
+    "accent3":     "#5be0ff",
+    "text":        "#f4ecff",
+    "text_dim":    "#9a88b0",
+    "highlight_text": "#12051e"
+  }
+}
